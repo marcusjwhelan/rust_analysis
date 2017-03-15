@@ -1,0 +1,6 @@
+[package]
+name = "rust_analysis"
+version = "0.1.0"
+authors = ["marcusjwhelan <marcus.j.whelan@gmail.com>"]
+
+[dependencies]
