@@ -1,9 +1,9 @@
 use ::structs::get::Matrix;
 
 /// Convert a csv String into a Matrix;
-pub fn to_matrix(raw_string: &String) -> Matrix {
+pub fn to_matrix(raw_string: &String) -> Matrix<Vec<String>> {
   
-  let twod_matrix = raw_string.lines()
+  let twod_matrix:Vec<Vec<String>> = raw_string.lines()
     .map(|s| s.trim()
               .split(',')
               .map(String::from)

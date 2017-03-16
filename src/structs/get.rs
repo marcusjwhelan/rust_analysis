@@ -1,13 +1,13 @@
 /// Struct declaring a matrix as its content
-pub struct Matrix {
-  pub matrix: Vec<Vec<String>>
+pub struct Matrix<T> {
+  pub matrix: Vec<T>,
 }
 
 /// constructor
-impl Matrix {
-  pub fn new(data:Vec<Vec<String>>) -> Matrix {
+impl<T> Matrix<T> {
+  pub fn new(data:Vec<T>) -> Matrix<T> {
     Matrix {
-      matrix: data
+      matrix: data,
     }
   }
 }
