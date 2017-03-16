@@ -1,16 +1,4 @@
-
-/// Struct declaring a matrix as its content
-pub struct Matrix {
-  pub matrix: Vec<Vec<String>>
-}
-
-impl Matrix {
-  pub fn new(data:Vec<Vec<String>>) -> Matrix {
-    Matrix {
-      matrix: data
-    }
-  }
-}
+use ::structs::get::Matrix;
 
 /// Convert a csv String into a Matrix;
 pub fn to_matrix(raw_string: &String) -> Matrix {
