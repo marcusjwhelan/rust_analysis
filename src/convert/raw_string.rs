@@ -10,5 +10,6 @@ pub fn to_matrix(raw_string: &String) -> Matrix<Vec<String>> {
               .collect::<Vec<String>>())
     .collect::<Vec<Vec<String>>>();
   
-  Matrix::new(twod_matrix)
+  let x: Matrix<Vec<String>> = Matrix::new(twod_matrix);
+  x
 }
